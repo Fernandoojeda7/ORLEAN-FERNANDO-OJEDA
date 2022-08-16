@@ -1,0 +1,651 @@
+* { 
+    box-sizing: border-box; 
+    padding: 0; 
+    margin: 0; 
+}
+.body_index_conteiner {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 16% 83.5%;
+    grid-template-areas: 
+    "header"
+    "main";
+}
+.body_servicios {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 18% 60% 28%;
+    grid-template-areas: 
+    "header"
+    "main";
+}
+.body_productos {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 18% 80% 22%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+}
+.body_contacto {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 18% 75% 26%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+}
+.div_header {
+    padding: 2%;
+    background-color: rgb(174, 107, 161);
+} 
+.header_index { 
+    grid-area: header;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Satisfy', cursive;
+} 
+.main_index{
+    height: calc(100vh - 20%);
+    grid-area: main;
+    overflow: auto;
+}
+nav { 
+    background: rgba(52, 51, 51, 0.235);
+    padding: 5px 20px; 
+}
+.nav_pages{
+   background-color: rgba(52, 51, 51, 0.235);
+    padding: 5px 20px; 
+} 
+ul { 
+    list-style-type: none; 
+} 
+.a_menu_header { 
+    color: rgb(207, 56, 220);
+    text-decoration: none; 
+}
+.a_menu_header_pages { 
+    color: rgb(207, 56, 220);
+    text-decoration: none; 
+} 
+.a_menu_header:hover { 
+    text-decoration: underline; 
+} 
+.logo a:hover { 
+    text-decoration: none; 
+}
+.logo_header {
+    width:6%;
+    height:40%;
+    border-radius:70%;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease; 
+}
+.logo_header:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(360deg);
+    transform-style: preserve-3d;
+} 
+.menu li { 
+    font-size: 16px; 
+    padding: 15px 5px; 
+    white-space: nowrap; 
+} 
+.logo a { 
+    font-size: 20px; 
+} 
+.menu { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: center; 
+} 
+.item { 
+    width: 100%; 
+    text-align: center; 
+    order: 3; 
+    display: none; 
+} 
+.h1_index {
+    text-align: center;
+    font-size: 250%;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Playfair Display', serif;
+    line-height: 35px;
+    color: #282828;
+    font-weight: 500;
+    font-style: italic;
+    padding: 2% 0;
+}
+.section_index{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 16%);
+    background-color: white;
+    max-width: 80%;
+    padding: auto;
+    margin: auto;
+}
+.h4_index{
+    margin: 46% 0 2% 0;
+    font-size: 160%;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Playfair Display', serif;
+    line-height: 35px;
+    color: rgb(177, 173, 173);
+    font-weight: 500;
+    font-style: italic;
+}
+hr{
+    margin: 0 0 44% 0;
+    color: rgb(186, 181, 181);
+}
+.video_index {
+    width: 100%;
+    height: 70%;
+    background-color: rgb(235, 235, 235);
+}
+footer {
+    background-color: black;
+}
+.logo_footer {
+    margin: 1% 0 0 2%;
+    width:6%;
+    height:40%;
+    border-radius:70%;
+}
+.div_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.i_footer {
+    color: white;
+    font-size: 130%;
+    margin: 0 1% 2% 1%;
+}
+.h3_footer {
+    font-size: 100%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    padding: 0 0 2% 0;
+}
+@keyframes slide {
+	0% { transform: translateX(0); }
+	10% { transform: translateX(0); }
+
+	15% { transform: translateX(-100%); }
+	30% { transform: translateX(-100%); }
+
+	35% { transform: translateX(-200%); }
+	50% { transform: translateX(-200%); }
+
+	55% { transform: translateX(-300%); }
+	70% { transform: translateX(-300%); }
+
+	75% { transform: translateX(-400%); }
+	90% { transform: translateX(-400%); }
+
+	95% { transform: translateX(-500%); }
+	100% { transform: translateX(-500%); }
+}
+.contenedor_index {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.slider {
+	position: relative;
+}
+.slides {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+.slide {
+	width: 100vw;
+	flex-shrink: 0;
+	animation-name: slide;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.slides:hover .slide {
+	animation-play-state: paused;
+}
+.slide img {
+	width: 100%;
+	vertical-align: top;
+}
+.slide a {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+.slide:target {
+	animation-name: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 50;
+}
+.slider-controler {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 100;
+}
+.slider-controler li {
+	margin: 0 0.5rem;
+	display: inline-block;
+	vertical-align: top;
+}
+.slider-controler a {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color: white;
+	font-size: 1.5rem;
+}
+.main_contacto {
+    height: calc(100vh - 20% -22%);
+    grid-area: main;
+    overflow: auto;
+}
+.contenido_contacto{
+    display: flex;
+}
+.h1_contacto {
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Playfair Display', serif;
+    line-height: 35px;
+    color: #282828;
+    font-weight: 500;
+    font-style: italic;
+    padding: 2% 2% 3% 3%;
+}
+.i_contacto{
+    color: black;
+    font-size: 180%;
+    margin: 0 1% 3% 4%;
+}
+.h3_contacto{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Playfair Display', serif;
+    line-height: 35px;
+    color: #282828;
+    font-weight: 500;
+    font-style: italic;
+    color: #0a0404;
+    font-size: 120%;
+}
+.contacto_item {
+    display: flex;
+}
+.contacto_imagen{
+    width: 50%;
+    margin: 0 0 2% 7%;
+}
+.form_contacto{
+    display: flex;
+    flex-direction: column;
+}
+.label_contacto{
+    margin: 4% 0;
+}
+.input_contacto {
+    margin: 1% 0;
+    font-size: 140%;
+    height: 50%;
+}
+.boton_contacto {
+    margin: 7% 25%;
+    padding: 4% 20% 4% 20%;
+    border-radius: 5%;
+    background-color: grey;
+}
+.titulo_servicios {
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Playfair Display', serif;
+    line-height: 35px;
+    color: #282828;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    padding: 1% 0 2% 0;
+}
+.main_servicios {
+    height: calc(100vh - 30% - 18% - 20%);
+    grid-area: main;
+    overflow: auto;
+}
+.servicios {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.imagen_servicios{
+    width: 40%;
+    margin: 0 2% 1% 0;
+}
+.parrafo_servicios {
+    font-size: 120%;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Playfair Display', serif;
+    line-height: 25px;
+    color: #282828;
+    font-weight: 500;
+    font-style: italic;
+    max-width: 30%;
+    text-align: justify;
+}
+.main_producto {
+    grid-area: main;
+    overflow: auto;
+}
+.contenedor_productos {
+    height: calc(100vh - 20% - 22%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.producto {
+    max-width: 20%;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px black;
+    border-radius: 15%;
+}
+.imagen_producto{
+    max-width: 50%;
+    padding: 2% 0 2% 0;
+}
+.parrafo_producto {
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Playfair Display', serif;
+    line-height: 35px;
+    color: #282828;
+    font-weight: 500;
+    font-style: italic;
+    text-align: justify;
+    max-width: 85%;
+    margin: 0 0 2% 0;
+}
+.precio_producto {
+    margin: 0 0 4% 0;
+}
+.main_nosotras {
+   background-color: rgb(234, 202, 237);
+} 
+.contenedor_img_nosotras{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.imagen_nosotras {
+    margin: 5% 2%;
+    width:30%;
+    border: solid 5px black;
+}
+.parrafo_nosotras {
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Playfair Display', serif;
+    line-height: 35px;
+    color: #282828;
+    font-weight: 500;
+    font-style: italic;
+    align-items: center;
+    text-align: justify;
+    padding: 0 3% 3% 3%;
+    font-size: 170%;
+}
+@media all and (max-width: 600px) {
+    .body_index_conteiner {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 11% 88%;
+        grid-template-areas: 
+        "header"
+        "main";
+    }
+    .body_servicios {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 72% 17%;
+        grid-template-areas: 
+        "header"
+        "main";
+    }
+    .main_servicios {
+        height: calc(100vh - 18% - 20%);
+        grid-area: main;
+        overflow: auto;
+    }
+    .body_productos {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 76% 14%;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    }
+    .body_contacto {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 75% 15%;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    }
+    .contenedor_productos {
+        height: calc(100vh - 20% - 22%);}
+    .menu { justify-content: center; }
+    .menu li {font-size: 12px;} 
+    .logo { display: none; } 
+    .item {  width: auto;  display: block; } 
+    a:hover { text-decoration: none; } 
+    a:hover { color: rgb(25, 22, 22); }
+    .modelo {display: none;}
+    .section_index {display: block;}
+    .h4_index{ margin: 5% 0 2% 0;}
+    hr{margin: 0 0 10% 0;}
+    .servicios { flex-direction: column;}
+    .parrafo_servicios{max-width: 40%;}
+    .imagen_nosotras {width: 40%;}
+    .parrafo_nosotras {font-size: 100%;}
+    .producto {max-width: 50%;}
+    .contenido_contacto{display: flex; flex-direction: column; }
+    .h1_contacto {font-size: 130%; text-align: center;}
+    .i_contacto{font-size: 140%;}
+    .h3_contacto{font-size: 100%;}
+    .form_contacto{align-items: center;}
+    .input_contacto {font-size: 140%; max-width: 90%;}
+    .label_contacto{margin: 1% 0;}
+    .boton_contacto { margin: 0 0 0 33%; padding: 3% 13% 3% 13%;}
+}
+@media all and (min-width: 601px) {
+    .body_index_conteiner {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 12% 88%;
+        grid-template-areas: 
+        "header"
+        "main";
+    }
+    .body_servicios {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 11% 73% 18%;
+        grid-template-areas: 
+        "header"
+        "main";
+    }
+    .main_servicios {
+        height: calc(100vh - 18% - 20%);
+        grid-area: main;
+        overflow: auto;
+    }
+    .body_productos {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 73% 17%;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    }
+    .body_contacto {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 75% 15%;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    }
+    .contenedor_productos {
+        height: calc(100vh - 9% - 14%);}
+    .menu { justify-content: center; }
+    .menu li {font-size: 12px;} 
+    .logo { display: none; } 
+    .item {  width: auto;  display: block; } 
+    a:hover { text-decoration: none; } 
+    a:hover { color: rgb(25, 22, 22); }
+    .modelo {display: inline-block;}
+    .section_index {display:flex; flex-direction: column}
+    .h4_index{ margin: 5% 0 2% 0;}
+    hr{margin: 0 0 13% 0;}
+    .i_footer{font-size: 140%;}
+    .imagen_nosotras {width: 40%;}
+    .parrafo_nosotras {font-size: 120%;}
+    .parrafo_servicios {font-size: 80%; line-height: 18px;}
+    .producto {max-width: 40%;}
+    .contenido_contacto{flex-direction: column; }
+    .h1_contacto {font-size: 130%; text-align: center;}
+    .i_contacto{font-size: 140%;}
+    .h3_contacto{font-size: 100%;}
+    .form_contacto{align-items: center;}
+    .input_contacto {font-size: 140%; max-width: 90%;}
+    .label_contacto{margin: 1% 0;}
+    .boton_contacto { margin: 0 0 0 33%; padding: 3% 13% 3% 13%;}
+}
+@media all and (min-width: 900px) {
+    .body_index_conteiner {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 16.5% 83.5%;
+        grid-template-areas: 
+        "header"
+        "main";
+    }
+    .body_servicios {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 73% 27%;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+    .body_contacto {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 22% 53% 25%;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    }
+    .main_servicios {
+        height: calc(100vh - 28%);
+        overflow: auto;
+        grid-area: main;
+    }
+    .body_productos {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 53.5% 25.5%;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    }
+    .contenedor_productos {height: calc(100vh - 12% - 18%);}
+    .item { display: block; width: auto; } 
+    .logo { display: block; flex: 1; order: 0; } 
+    .item { order: 1; } 
+    .menu li { font-size: 16px; padding: 15px 10px; } 
+    .menu li { padding-right: 0; }
+    .modelo {display: inline-block}
+    .section_index{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;}
+    .h4_index{margin: 46% 0 2% 0;}
+    hr{margin: 0 0 44% 0;}
+    .i_footer{font-size: 150%;}
+    .servicios { flex-direction: row;}
+    .imagen_nosotras {width: 30%;}
+    .parrafo_nosotras {font-size: 150%;}
+    .parrafo_servicios {font-size: 130%; line-height: 30px;}
+    .producto {max-width: 25%; max-height: 63%;}
+    .imagen_producto {max-width: 30%;}
+    .parrafo_producto {
+        font-family: 'Playfair Display';
+        line-height: 21px;
+        text-align: justify;
+        max-width: 90%;
+        margin: 0 0 2% 0;
+    }
+    .contenido_contacto{ flex-direction: row,}
+    .h1_contacto {font-size: 180%;}
+    .i_contacto{font-size: 180%;}
+    .h3_contacto{font-size: 120%;}
+    .contacto_imagen{width: 35%;}
+    .formulario{ display: none;}
+   
+}
+@media all and (min-width: 1200px) {
+	.slide {
+		width: 1200px;
+	}	
+}
