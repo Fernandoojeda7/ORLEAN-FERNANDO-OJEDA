@@ -3,50 +3,7 @@
     padding: 0; 
     margin: 0; 
 }
-.body_index_conteiner {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 100%;
-    grid-template-rows: 16% 83.5%;
-    grid-template-areas: 
-    "header"
-    "main";
-}
-.body_servicios {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 100%;
-    grid-template-rows: 18% 60% 28%;
-    grid-template-areas: 
-    "header"
-    "main";
-}
-.body_productos {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 100%;
-    grid-template-rows: 18% 80% 22%;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer"
-}
-.body_contacto {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 100%;
-    grid-template-rows: 18% 75% 26%;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer"
-}
-.div_header {
-    padding: 2%;
-    background-color: rgb(174, 107, 161);
-} 
-.header_index { 
-    grid-area: header;
+.header_index {
     font-family: 'Abril Fatface', cursive;
     font-family: 'Edu NSW ACT Foundation', cursive;
     font-family: 'Fjalla One', sans-serif;
@@ -54,10 +11,13 @@
     font-family: 'Lobster Two', cursive;
     font-family: 'Satisfy', cursive;
 } 
+.div_header {
+    padding: 2%;
+    background-color: rgb(174, 107, 161);
+} 
 .main_index{
-    height: calc(100vh - 20%);
-    grid-area: main;
     overflow: auto;
+    padding: 1% 0 0 0;
 }
 nav { 
     background: rgba(52, 51, 51, 0.235);
@@ -153,9 +113,10 @@ hr{
     margin: 0 0 44% 0;
     color: rgb(186, 181, 181);
 }
-.video_index {
-    width: 100%;
-    height: 70%;
+.video_index  {
+    width: 30%;
+    display: block;
+    margin: auto;
     background-color: rgb(235, 235, 235);
 }
 footer {
@@ -271,9 +232,7 @@ footer {
 	font-size: 1.5rem;
 }
 .main_contacto {
-    height: calc(100vh - 20% -22%);
-    grid-area: main;
-    overflow: auto;
+    background-color: rgb(234, 202, 237);
 }
 .contenido_contacto{
     display: flex;
@@ -338,9 +297,7 @@ footer {
     padding: 1% 0 2% 0;
 }
 .main_servicios {
-    height: calc(100vh - 30% - 18% - 20%);
-    grid-area: main;
-    overflow: auto;
+    background-color: rgb(234, 202, 237);
 }
 .servicios {
     display: flex;
@@ -363,8 +320,7 @@ footer {
     text-align: justify;
 }
 .main_producto {
-    grid-area: main;
-    overflow: auto;
+    background-color: rgb(234, 202, 237);
 }
 .contenedor_productos {
     height: calc(100vh - 20% - 22%);
@@ -380,6 +336,9 @@ footer {
     align-items: center;
     border: solid 2px black;
     border-radius: 15%;
+}
+.producto:hover{
+    transform: scale(2 deg);
 }
 .imagen_producto{
     max-width: 50%;
@@ -425,51 +384,6 @@ footer {
     font-size: 170%;
 }
 @media all and (max-width: 600px) {
-    .body_index_conteiner {
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 100%;
-        grid-template-rows: 11% 88%;
-        grid-template-areas: 
-        "header"
-        "main";
-    }
-    .body_servicios {
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 100%;
-        grid-template-rows: 10% 72% 17%;
-        grid-template-areas: 
-        "header"
-        "main";
-    }
-    .main_servicios {
-        height: calc(100vh - 18% - 20%);
-        grid-area: main;
-        overflow: auto;
-    }
-    .body_productos {
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 100%;
-        grid-template-rows: 10% 76% 14%;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer"
-    }
-    .body_contacto {
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 100%;
-        grid-template-rows: 10% 75% 15%;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer"
-    }
-    .contenedor_productos {
-        height: calc(100vh - 20% - 22%);}
     .menu { justify-content: center; }
     .menu li {font-size: 12px;} 
     .logo { display: none; } 
@@ -495,51 +409,6 @@ footer {
     .boton_contacto { margin: 0 0 0 33%; padding: 3% 13% 3% 13%;}
 }
 @media all and (min-width: 601px) {
-    .body_index_conteiner {
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 100%;
-        grid-template-rows: 12% 88%;
-        grid-template-areas: 
-        "header"
-        "main";
-    }
-    .body_servicios {
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 100%;
-        grid-template-rows: 11% 73% 18%;
-        grid-template-areas: 
-        "header"
-        "main";
-    }
-    .main_servicios {
-        height: calc(100vh - 18% - 20%);
-        grid-area: main;
-        overflow: auto;
-    }
-    .body_productos {
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 100%;
-        grid-template-rows: 10% 73% 17%;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer"
-    }
-    .body_contacto {
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 100%;
-        grid-template-rows: 10% 75% 15%;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer"
-    }
-    .contenedor_productos {
-        height: calc(100vh - 9% - 14%);}
     .menu { justify-content: center; }
     .menu li {font-size: 12px;} 
     .logo { display: none; } 
@@ -565,51 +434,6 @@ footer {
     .boton_contacto { margin: 0 0 0 33%; padding: 3% 13% 3% 13%;}
 }
 @media all and (min-width: 900px) {
-    .body_index_conteiner {
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 100%;
-        grid-template-rows: 16.5% 83.5%;
-        grid-template-areas: 
-        "header"
-        "main";
-    }
-    .body_servicios {
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 100%;
-        grid-template-rows: 20% 73% 27%;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-    }
-    .body_contacto {
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 100%;
-        grid-template-rows: 22% 53% 25%;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer"
-    }
-    .main_servicios {
-        height: calc(100vh - 28%);
-        overflow: auto;
-        grid-area: main;
-    }
-    .body_productos {
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 100%;
-        grid-template-rows: 20% 53.5% 25.5%;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer"
-    }
-    .contenedor_productos {height: calc(100vh - 12% - 18%);}
     .item { display: block; width: auto; } 
     .logo { display: block; flex: 1; order: 0; } 
     .item { order: 1; } 
@@ -636,13 +460,13 @@ footer {
         max-width: 90%;
         margin: 0 0 2% 0;
     }
-    .contenido_contacto{ flex-direction: row,}
     .h1_contacto {font-size: 180%;}
     .i_contacto{font-size: 180%;}
     .h3_contacto{font-size: 120%;}
     .contacto_imagen{width: 35%;}
-    .formulario{ display: none;}
-   
+    .contenido_contacto{display: flex; flex-direction: row-reverse}
+    .form_contacto{margin: 0 5% 0 20% ;}
+    .boton_contacto {margin: 2% 38%;}   
 }
 @media all and (min-width: 1200px) {
 	.slide {
