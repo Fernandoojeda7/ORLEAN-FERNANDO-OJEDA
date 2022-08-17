@@ -323,7 +323,6 @@ footer {
     background-color: rgb(234, 202, 237);
 }
 .contenedor_productos {
-    height: calc(100vh - 20% - 22%);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -331,6 +330,7 @@ footer {
 .producto {
     max-width: 20%;
     margin: 2%;
+    background: rgb(232, 147, 199);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -338,10 +338,11 @@ footer {
     border-radius: 15%;
 }
 .producto:hover{
-    transform: scale(2 deg);
+    box-shadow: 10px 10px 10px 10px rgb(128, 125, 125);
+    transform: scale(1.1);
 }
 .imagen_producto{
-    max-width: 50%;
+    max-width: 100%;
     padding: 2% 0 2% 0;
 }
 .parrafo_producto {
