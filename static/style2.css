@@ -452,7 +452,7 @@ footer {
     .boton_contacto { margin: 0 0 0 33%; padding: 3% 13% 3% 13%;}
 }
 @media all and (min-width: 900px) {
-    .main_index{padding: 10% 0 0 0;}
+    .main_index{padding: 11% 0 0 0;}
     .main_contacto {padding: 11% 0 0 0;}
     .main_servicios {padding: 13% 0 0 0;}
     .main_producto {padding: 13% 0 0 0;}
