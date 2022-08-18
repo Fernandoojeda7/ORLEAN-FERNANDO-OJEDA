@@ -13,7 +13,7 @@
     font-family: 'Lobster', cursive;
     font-family: 'Lobster Two', cursive;
     font-family: 'Satisfy', cursive;
-} 
+}
 .div_header {
     padding: 2%;
     background-color: rgb(174, 107, 161);
@@ -21,17 +21,17 @@
 .main_index{
     padding: 11% 0 0 0;
 }
-nav { 
+.nav { 
     background:rgb(201, 191, 191);
-    padding: 5px 20px; 
+    padding: 1% 0; 
 }
 .nav_pages{
    background-color: rgb(201, 191, 191);
     padding: 5px 20px; 
 } 
-ul { 
+/* ul { 
     list-style-type: none; 
-} 
+}  */
 .a_menu_header { 
     color: rgb(207, 56, 220);
     text-decoration: none; 
@@ -60,7 +60,7 @@ ul {
     transform: rotateY(360deg);
     transform-style: preserve-3d;
 } 
-.menu li { 
+/* .menu li { 
     font-size: 16px; 
     padding: 15px 5px; 
     white-space: nowrap; 
@@ -79,7 +79,7 @@ ul {
     text-align: center; 
     order: 3; 
     display: none; 
-} 
+}  */
 .h1_index {
     text-align: center;
     font-size: 250%;
@@ -151,7 +151,7 @@ footer {
     text-align: center;
     padding: 0 0 2% 0;
 }
-@keyframes slide {
+/* @keyframes slide {
 	0% { transform: translateX(0); }
 	10% { transform: translateX(0); }
 
@@ -231,7 +231,7 @@ footer {
 	text-decoration: none;
 	color: white;
 	font-size: 1.5rem;
-}
+} */
 .main_contacto {
     background-color: rgb(234, 202, 237);
     padding: 10% 0 0 0;
@@ -421,7 +421,7 @@ footer {
     .boton_contacto { margin: 0 0 0 33%; padding: 3% 13% 3% 13%;}
 }
 @media all and (min-width: 601px) {
-    .main_index{padding: 13% 0 0 0;}
+    .main_index{padding: 12% 0 0 0;}
     .main_contacto {padding: 13% 0 0 0;}
     .main_servicios {padding: 15% 0 0 0;}
     .main_producto {padding: 15% 0 0 0;}
@@ -452,7 +452,7 @@ footer {
     .boton_contacto { margin: 0 0 0 33%; padding: 3% 13% 3% 13%;}
 }
 @media all and (min-width: 900px) {
-    .main_index{padding: 11% 0 0 0;}
+    .main_index{padding: 9% 0 0 0;}
     .main_contacto {padding: 11% 0 0 0;}
     .main_servicios {padding: 13% 0 0 0;}
     .main_producto {padding: 13% 0 0 0;}
