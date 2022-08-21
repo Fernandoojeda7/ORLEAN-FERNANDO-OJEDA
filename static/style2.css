@@ -367,7 +367,7 @@ footer {
 }
 @media all and (min-width: 900px) {
     .main_index{padding: 9% 0 0 0;}
-    .main_contacto {padding: 9% 0 0 0;}
+    .main_contacto {padding: 7% 0 0 0;}
     .main_servicios {padding: 10% 0 0 0;}
     .main_producto {padding: 10% 0 0 0;}
     .main_nosotras {padding: 9% 0 0 0;}
@@ -397,13 +397,12 @@ footer {
         max-width: 90%;
         margin: 0 0 2% 0;
     }
-    .h1_contacto {font-size: 180%;}
+    .h1_contacto {font-size: 180%; text-align: left;}
     .i_contacto{font-size: 180%;}
     .h3_contacto{font-size: 120%;}
     .contacto_imagen{width: 35%;}
-     .contenido_contacto{display: flex; flex-direction: row}
-    /* .form_contacto{margin: 0 5% 0 20% ;}
-    .boton_contacto {margin: 2% 38%;}    */
+    .contenido_contacto{display: flex; flex-direction: row; }
+    .form_contacto{position: relative; right: 20%;}
 }
 @media all and (min-width: 1200px) {
 	.slide {
