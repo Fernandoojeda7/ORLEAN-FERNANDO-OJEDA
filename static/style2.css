@@ -3,6 +3,9 @@
     padding: 0; 
     margin: 0; 
 }
+html{
+    scroll-behavior: smooth;
+}
 .header {
     color: #36A0FF;
     font-size: 27px;
@@ -189,6 +192,12 @@ footer {
     height: 50%;
 }
 .boton_contacto {
+    display: inline-block;
+    padding: 2% 0;
+    width: 97%;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 50px;
     margin: 3%;
     background-color: grey;
     color: #282828;
