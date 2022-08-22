@@ -6,16 +6,7 @@
 html{
     scroll-behavior: smooth;
 }
-.header {
-    color: #36A0FF;
-    font-size: 27px;
-    padding: 10px;
-}
 
-.bigicon {
-    font-size: 35px;
-    color: #36A0FF;
-}
 .header_index {
     position: fixed;
     top: 0%;
@@ -44,7 +35,7 @@ html{
 } 
 .a_menu_header { 
     color: rgb(207, 56, 220);
-    text-decoration: none; 
+    text-decoration: none;
 }
 .a_menu_header_pages { 
     color: rgb(207, 56, 220);
@@ -56,20 +47,17 @@ html{
 .logo a:hover { 
     text-decoration: none; 
 }
-.logo_header {
-    width:6%;
-    height:40%;
-    border-radius:70%;
-    -webkit-transition: all 1s ease-out;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease; 
+.a_contiene_logo{
+    display: contents;
 }
-.logo_header:hover {
-    -webkit-transform: rotateY(180deg);
-    -webkit-transform-style: preserve-3d;
-    transform: rotateY(360deg);
-    transform-style: preserve-3d;
-} 
+.logo_header {
+    padding: 0 2% 0 1%;
+    width: 9%;
+    height:40%;
+    border-radius:90%;
+    
+}
+
 .h1_index {
     text-align: center;
     font-size: 250%;
@@ -332,7 +320,6 @@ footer {
     .form_contacto{align-items: center;}
     .input_contacto {font-size: 140%; max-width: 90%;}
     .label_contacto{margin: 1% 0;}
-    /* .boton_contacto { margin: 0 0 0 33%; padding: 3% 13% 3% 13%;} */
 }
 @media all and (min-width: 601px) {
     .main_index{padding: 12% 0 0 0;}
@@ -363,10 +350,10 @@ footer {
     .form_contacto{align-items: center;}
     .input_contacto {font-size: 140%; max-width: 90%;}
     .label_contacto{margin: 1% 0;}
-    /* .boton_contacto { margin: 0 0 0 33%; padding: 3% 13% 3% 13%;} */
+   
 }
 @media all and (min-width: 900px) {
-    .main_index{padding: 9% 0 0 0;}
+    .main_index{padding: 12% 0 0 0;}
     .main_contacto {padding: 7% 0 0 0;}
     .main_servicios {padding: 10% 0 0 0;}
     .main_producto {padding: 10% 0 0 0;}
