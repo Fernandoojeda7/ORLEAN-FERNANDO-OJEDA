@@ -234,36 +234,23 @@ footer {
     justify-content: space-evenly;
 }
 .producto {
-    max-width: 20%;
     margin: 2%;
-    background: rgb(249, 192, 227);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid 2px black;
-    border-radius: 15%;
 }
 .producto:hover{
     box-shadow: 10px 10px 10px 10px rgb(128, 125, 125);
     transform: scale(1.1);
 }
-.imagen_producto{
-    max-width: 100%;
-    padding: 2% 0 2% 0;
-}
-.parrafo_producto {
-    font-family: 'Abril Fatface', cursive;
-    font-family: 'Playfair Display', serif;
-    line-height: 35px;
+.boton_producto {
+    display: inline-block;
+    margin-bottom: auto;
+    padding: 2% 0;
+    width: 97%;
+    text-align: center;
+    border: 1px solid rgb(8, 7, 7);
+    border-radius: 50px;
+    margin: 3%;
+    background-color: rgb(174, 107, 161);;
     color: #282828;
-    font-weight: 500;
-    font-style: italic;
-    text-align: justify;
-    max-width: 85%;
-    margin: 0 0 2% 0;
-}
-.precio_producto {
-    margin: 0 0 4% 0;
 }
 .main_nosotras {
    background-color: rgb(234, 202, 237);
@@ -312,7 +299,6 @@ footer {
     .imagen_nosotras {width: 40%;}
     .parrafo_nosotras {font-size: 100%;}
     .producto {max-width: 50%;}
-    .imagen_producto {max-width: 50%;}
     .contenido_contacto{display: flex; flex-direction: column; }
     .h1_contacto {font-size: 130%; text-align: center;}
     .i_contacto{font-size: 140%;}
@@ -342,7 +328,6 @@ footer {
     .parrafo_nosotras {font-size: 120%;}
     .parrafo_servicios {font-size: 80%; line-height: 18px;}
     .producto {max-width: 40%;}
-    .imagen_producto {max-width: 50%;}
     .contenido_contacto{flex-direction: column; }
     .h1_contacto {font-size: 130%; text-align: center;}
     .i_contacto{font-size: 140%;}
@@ -356,7 +341,7 @@ footer {
     .main_index{padding: 12% 0 0 0;}
     .main_contacto {padding: 7% 0 0 0;}
     .main_servicios {padding: 10% 0 0 0;}
-    .main_producto {padding: 10% 0 0 0;}
+    .main_producto {padding: 12% 0 0 0;}
     .main_nosotras {padding: 9% 0 0 0;}
     .item { display: block; width: auto; } 
     .logo { display: block; flex: 1; order: 0; } 
@@ -376,14 +361,6 @@ footer {
     .parrafo_nosotras {font-size: 150%;}
     .parrafo_servicios {font-size: 130%; line-height: 30px;}
     .producto {max-width: 25%; max-height: 63%;}
-    .imagen_producto {max-width: 30%;}
-    .parrafo_producto {
-        font-family: 'Playfair Display';
-        line-height: 21px;
-        text-align: justify;
-        max-width: 90%;
-        margin: 0 0 2% 0;
-    }
     .h1_contacto {font-size: 180%; text-align: left;}
     .i_contacto{font-size: 180%;}
     .h3_contacto{font-size: 120%;}
