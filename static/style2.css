@@ -8,9 +8,18 @@ html{
 }
 
 .header_index {
-    position: fixed;
+    position: sticky;
     top: 0%;
-    width: 100%;
+    z-index: 1;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Satisfy', cursive;
+}
+.header_servicios {
+    z-index: 1;
     font-family: 'Abril Fatface', cursive;
     font-family: 'Edu NSW ACT Foundation', cursive;
     font-family: 'Fjalla One', sans-serif;
@@ -20,11 +29,8 @@ html{
 }
 .div_header {
     padding: 2%;
-    background-color: rgb(174, 107, 161);
+    background: radial-gradient(circle, rgb(220, 73, 240) 0%, rgba(29,30,31,1) 100%);
 } 
-.main_index{
-    padding: 11% 0 0 0;
-}
 .nav { 
     background:rgb(201, 191, 191);
     padding: 1% 0; 
@@ -55,9 +61,10 @@ html{
     width: 9%;
     height:40%;
     border-radius:90%;
-    
 }
-
+.main_index{
+    padding: 0.2% 0 0 0;
+}
 .h1_index {
     text-align: center;
     font-size: 250%;
@@ -131,7 +138,7 @@ footer {
 }
 .main_contacto {
     background-color: rgb(234, 202, 237);
-    padding: 10% 0 0 0;
+    padding: 2% 0 0 0;
 }
 .contenido_contacto{
     display: flex;
@@ -198,11 +205,12 @@ footer {
     font-weight: 500;
     font-style: italic;
     text-align: center;
-    padding: 1% 0 2% 0;
+    padding: 1% 0 1% 0;
 }
 .main_servicios {
     background-color: rgb(234, 202, 237);
-    padding: 13% 0 0 0;
+    padding: 2% 0 0 0;
+    
 }
 .servicios {
     display: flex;
@@ -226,7 +234,7 @@ footer {
 }
 .main_producto {
     background-color: rgb(241, 177, 246);
-    padding: 12% 0 0 0;
+    padding: 2% 0 0 0;
 }
 .contenedor_productos {
     display: flex;
@@ -249,12 +257,19 @@ footer {
     border: 1px solid rgb(8, 7, 7);
     border-radius: 50px;
     margin: 3%;
-    background-color: rgb(174, 107, 161);;
+    background: radial-gradient(circle, rgb(220, 73, 240) 0%, rgb(65, 67, 70) 100%);
     color: #282828;
+}
+.parrafo_producto {
+    display: none;
+}
+.parrafo_producto:hover {
+    display: inline-block;
 }
 .main_nosotras {
    background-color: rgb(234, 202, 237);
-   padding: 10% 0 0 0;
+   padding: 2% 0 0 0;
+
 } 
 .contenedor_img_nosotras{
     display: flex;
@@ -279,11 +294,6 @@ footer {
     font-size: 170%;
 }
 @media all and (max-width: 600px) {
-    .main_index{padding: 15% 0 0 0;}
-    .main_contacto {padding: 15% 0 0 0;}
-    .main_servicios {padding: 17% 0 0 0;}
-    .main_producto {padding: 17% 0 0 0;}
-    .main_nosotras {padding: 15% 0 0 0;}
     .menu { justify-content: center; }
     .menu li {font-size: 12px;} 
     .logo { display: none; } 
@@ -308,11 +318,6 @@ footer {
     .label_contacto{margin: 1% 0;}
 }
 @media all and (min-width: 601px) {
-    .main_index{padding: 12% 0 0 0;}
-    .main_contacto {padding: 13% 0 0 0;}
-    .main_servicios {padding: 15% 0 0 0;}
-    .main_producto {padding: 15% 0 0 0;}
-    .main_nosotras {padding: 13% 0 0 0;}
     .menu { justify-content: center; }
     .menu li {font-size: 12px;} 
     .logo { display: none; } 
@@ -338,11 +343,6 @@ footer {
    
 }
 @media all and (min-width: 900px) {
-    .main_index{padding: 12% 0 0 0;}
-    .main_contacto {padding: 7% 0 0 0;}
-    .main_servicios {padding: 10% 0 0 0;}
-    .main_producto {padding: 12% 0 0 0;}
-    .main_nosotras {padding: 9% 0 0 0;}
     .item { display: block; width: auto; } 
     .logo { display: block; flex: 1; order: 0; } 
     .item { order: 1; } 
