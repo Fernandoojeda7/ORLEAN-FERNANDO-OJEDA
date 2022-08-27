@@ -1,0 +1,95 @@
+.header_index {
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Lobster', cursive;
+  font-family: 'Lobster Two', cursive;
+  font-family: 'Satisfy', cursive; }
+  .header_index .div_header {
+    padding: 2%;
+    background: radial-gradient(circle, #dc49f0 0%, #1d1e1f 100%); }
+  .header_index .nav {
+    background: #c9bfbf;
+    padding: 1% 0; }
+    .header_index .nav .a_menu_header {
+      color: #cf38dc;
+      text-decoration: none; }
+      .header_index .nav .a_menu_header:hover {
+        text-decoration: none; }
+    .header_index .nav .a_contiene_logo {
+      display: contents; }
+    .header_index .nav .logo_header {
+      padding: 0 2% 0 1%;
+      width: 9%;
+      height: 40%;
+      border-radius: 90%; }
+
+.main_producto {
+  background-color: #f1b1f6;
+  padding: 2% 0 0 0; }
+  .main_producto .contenedor_productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    .main_producto .contenedor_productos .producto {
+      margin: 2%; }
+      .main_producto .contenedor_productos .producto:hover {
+        box-shadow: 10px 10px 10px 10px #807d7d;
+        transform: scale(1.1); }
+      .main_producto .contenedor_productos .producto .boton_producto {
+        display: inline-block;
+        margin-bottom: auto;
+        padding: 2% 0;
+        width: 97%;
+        text-align: center;
+        border: 1px solid #080707;
+        border-radius: 50px;
+        margin: 3%;
+        background: radial-gradient(circle, #dc49f0 0%, #1d1e1f 100%);
+        color: #282828; }
+      .main_producto .contenedor_productos .producto .parrafo_producto {
+        display: none; }
+      .main_producto .contenedor_productos .producto .parrafo_producto:hover {
+        display: inline-block; }
+
+footer {
+  background-color: black; }
+  footer .logo_footer {
+    margin: 1% 0 0 2%;
+    width: 6%;
+    height: 40%;
+    border-radius: 70%; }
+  footer .div_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    footer .div_footer .i_footer {
+      color: white;
+      font-size: 130%;
+      margin: 0 1% 2% 1%; }
+  footer .h3_footer {
+    font-size: 100%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    padding: 0 0 2% 0; }
+
+@media all and (max-width: 600px) {
+  .producto {
+    max-width: 50%; } }
+
+@media all and (min-width: 601px) {
+  .producto {
+    max-width: 40%; } }
+
+@media all and (min-width: 900px) {
+  .producto {
+    max-width: 25%;
+    max-height: 63%; } }
