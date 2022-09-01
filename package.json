@@ -1,0 +1,30 @@
+{
+  "name": "orlean-fernando-ojeda",
+  "version": "1.0.0",
+  "description": "Tratamientos de cuidado y belleza facial y corporal y venta de productos a tal fines.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss static/scss/prueba.scss static/css/pruebacss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fernandoojeda7/ORLEAN-FERNANDO-OJEDA.git"
+  },
+  "keywords": [
+    "orlean",
+    "beuaty",
+    "cosmetic"
+  ],
+  "author": "fernandoojeda7@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fernandoojeda7/ORLEAN-FERNANDO-OJEDA/issues"
+  },
+  "homepage": "https://github.com/Fernandoojeda7/ORLEAN-FERNANDO-OJEDA#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
