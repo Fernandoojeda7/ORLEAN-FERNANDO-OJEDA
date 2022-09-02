@@ -51,6 +51,36 @@ html{
     height:40%;
     border-radius:90%;
 }
+footer {
+    background-color: black;
+}
+.logo_footer {
+    margin: 1% 0 0 2%;
+    width:6%;
+    height:40%;
+    border-radius:70%;
+}
+.div_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.i_footer {
+    color: white;
+    font-size: 130%;
+    margin: 0 1% 2% 1%;
+}
+.h3_footer {
+    font-size: 100%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    padding: 0 0 2% 0;
+}
 .main_index{
     padding: 0.2% 0 0 0;
 }
@@ -69,7 +99,7 @@ html{
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse;
-    box-shadow: 0 10px 20px rgb(0 0 0 / 16%);
+    box-shadow: 0 10px 20px rgb(19, 1, 1);
     background-color: white;
     max-width: 80%;
     padding: auto;
@@ -167,14 +197,14 @@ footer {
     display: flex;
     flex-direction: column;
 }
-.label_contacto{
+/* .label_contacto{
     margin: 4% 0;
 }
 .input_contacto {
     margin: 1% 0;
     font-size: 140%;
     height: 50%;
-}
+} */
 .boton_contacto {
     display: inline-block;
     padding: 2% 0;
@@ -283,12 +313,12 @@ footer {
     font-size: 170%;
 }
 @media all and (max-width: 600px) {
-    .menu { justify-content: center; }
+    /* .menu { justify-content: center; }
     .menu li {font-size: 12px;} 
     .logo { display: none; } 
     .item {  width: auto;  display: block; } 
     a:hover { text-decoration: none; } 
-    a:hover { color: rgb(25, 22, 22); }
+    a:hover { color: rgb(25, 22, 22); } */
     .modelo {display: none;}
     .section_index {display: block;}
     .h4_index{ margin: 5% 0 2% 0;}
@@ -303,16 +333,16 @@ footer {
     .i_contacto{font-size: 140%;}
     .h3_contacto{font-size: 100%;}
     .form_contacto{align-items: center;}
-    .input_contacto {font-size: 140%; max-width: 90%;}
-    .label_contacto{margin: 1% 0;}
+    /* .input_contacto {font-size: 140%; max-width: 90%;}
+    .label_contacto{margin: 1% 0;} */
 }
 @media all and (min-width: 601px) {
-    .menu { justify-content: center; }
+    /* .menu { justify-content: center; }
     .menu li {font-size: 12px;} 
     .logo { display: none; } 
     .item {  width: auto;  display: block; } 
     a:hover { text-decoration: none; } 
-    a:hover { color: rgb(25, 22, 22); }
+    a:hover { color: rgb(25, 22, 22); } */
     .modelo {display: inline-block;}
     .section_index {display:flex; flex-direction: column}
     .h4_index{ margin: 5% 0 2% 0;}
@@ -327,16 +357,16 @@ footer {
     .i_contacto{font-size: 140%;}
     .h3_contacto{font-size: 100%;}
     .form_contacto{align-items: center;}
-    .input_contacto {font-size: 140%; max-width: 90%;}
-    .label_contacto{margin: 1% 0;}
+    /* .input_contacto {font-size: 140%; max-width: 90%;}
+    .label_contacto{margin: 1% 0;} */
    
 }
 @media all and (min-width: 900px) {
-    .item { display: block; width: auto; } 
+    /* .item { display: block; width: auto; } 
     .logo { display: block; flex: 1; order: 0; } 
     .item { order: 1; } 
     .menu li { font-size: 16px; padding: 15px 10px; } 
-    .menu li { padding-right: 0; }
+    .menu li { padding-right: 0; } */
     .modelo {display: inline-block}
     .section_index{
         display: flex;
