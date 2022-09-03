@@ -9,54 +9,30 @@ html {
 .header_index {
   position: sticky;
   top: 0%;
-  z-index: 1;
+  z-index: 1; }
+
+.header_servicios, .header_index {
   font-family: 'Abril Fatface', cursive;
   font-family: 'Edu NSW ACT Foundation', cursive;
   font-family: 'Fjalla One', sans-serif;
   font-family: 'Lobster', cursive;
   font-family: 'Lobster Two', cursive;
   font-family: 'Satisfy', cursive; }
-  .header_index .div_header {
+  .header_servicios .div_header, .header_index .div_header {
     padding: 1.5%;
     background: radial-gradient(circle, #dc49f0 0%, #1d1e1f 100%); }
-  .header_index nav {
-    background: #2a3b3e; }
-    .header_index nav .a_menu_header {
-      color: #cf38dc;
-      text-decoration: none; }
-      .header_index nav .a_menu_header:hover {
-        color: #e9e0e0;
-        text-decoration: none; }
-    .header_index nav .a_contiene_logo {
-      display: contents; }
-    .header_index nav .logo_header {
-      padding: 0 2% 0 1%;
-      width: 9%;
-      height: 40%;
-      border-radius: 90%; }
-
-.header_servicios {
-  font-family: 'Abril Fatface', cursive;
-  font-family: 'Edu NSW ACT Foundation', cursive;
-  font-family: 'Fjalla One', sans-serif;
-  font-family: 'Lobster', cursive;
-  font-family: 'Lobster Two', cursive;
-  font-family: 'Satisfy', cursive; }
-  .header_servicios .div_header {
-    padding: 2%;
-    background: radial-gradient(circle, #dc49f0 0%, #1d1e1f 100%); }
-  .header_servicios nav {
+  .header_servicios .nav, .header_index .nav {
     background: #2a3b3e;
     padding: 1% 0; }
-    .header_servicios nav .a_menu_header {
+    .header_servicios .nav .a_menu_header, .header_index .nav .a_menu_header {
       color: #cf38dc;
       text-decoration: none; }
-      .header_servicios nav .a_menu_header:hover {
+      .header_servicios .nav .a_menu_header:hover, .header_index .nav .a_menu_header:hover {
         color: #e9e0e0;
         text-decoration: none; }
-    .header_servicios nav .a_contiene_logo {
+    .header_servicios .nav .a_contiene_logo, .header_index .nav .a_contiene_logo {
       display: contents; }
-    .header_servicios nav .logo_header {
+    .header_servicios .nav .logo_header, .header_index .nav .logo_header {
       padding: 0 2% 0 1%;
       width: 9%;
       height: 40%;
@@ -149,7 +125,6 @@ footer {
         color: #000000;
         font-weight: 500;
         font-style: italic;
-        color: #000000;
         font-size: 120%; }
     .main_contacto .contenido_contacto .form_contacto {
       display: flex;
