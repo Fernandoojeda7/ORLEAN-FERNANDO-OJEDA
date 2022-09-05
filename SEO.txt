@@ -1,0 +1,31 @@
+En mi proyecto "ORLEAN" AGREGUE:
+
+INDEX.HTML:
+- KEYWORDS => "orlean, cuidado, belleza, servicios, facial, uñas, cejas".
+- Description => "En ORLEAN encontrarás una Atención amorosa y personalizada en cada uno de los servicios especializados en el cuidado personal, que permitirán realzar tu bellaza natural."
+- Titulo paso de => ORLEAN a ORLEAN -Beauty Cosmetics.
+
+SERVICIOS.HTML:
+- KEYWORDS => "makeup, piel, podal, musculos, masaje, corporal, pestañas, manicura".
+- Description => "En ORLEAN encontrarás técnicas especializadas para cada parte de tu cuerpo."
+- Titulo paso de => SERVICIOS a ORLEAN - SERVICIOS.
+
+PRODUCTOSVARIASMARCAS.HTML:
+- KEYWORDS => "producto, varias marcas, gel, crema, locion, base".
+- Description => "En ORLEAN te ofrecemos una variedad de productos de cosméticas convencionales, las mejores marcas para vos."
+- Titulo paso de => PRODUCTOS a ORLEAN - PRODUCTOS VARIAS MARCAS.
+
+PRODUCTOSNEROLY.HTML:
+- KEYWORDS => "producto, neroly, aceite, micelar, arcilla verde, jabon, facial".
+- Description => "En ORLEAN te ofrecemos una variedad de productos de cosméticas natural y orgánicos."
+- Titulo paso de => PRODUCTOS a ORLEAN - PRODUCTOS NEROLY.
+
+NOSOTRAS.HTML:
+- KEYWORDS => "orlean, katia ottaviano, karina ottaviano, hermanas, socias, maquilladora, cosmetologa".
+- Description => "Dos hermanas, katia Ottaviano, cosmetóloga y cosmiatrista, y karina Ottaviano, maquilladora profesional, especialista en cejas y pestañas, manicurista y micropigmentadora, un mismo sueño, ORLEAN."
+- Titulo paso de => NOSOTRAS a ORLEAN - SOBRE NOSOTRAS.
+
+CONTACTO.HTML:
+- KEYWORDS => orlean, contacto, avenida, castelli, resistencia chaco, consulta".
+- Description => "Av. Castelli Nº 1180, Resistencia Chaco, Telefono número 3721433722."
+- Titulo paso de => CONTACTO a ORLEAN - CONTACTO.

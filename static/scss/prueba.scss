@@ -109,8 +109,17 @@ footer {
             color: map-get($map: $tipos-colores, $key: tipo6);
             font-weight: 500;
             font-style: italic;}
-        
-    }    
+    }
+    .h6_index{
+        text-align: center;
+        font-size: 180%;
+        font-family: 'Abril Fatface', cursive;
+        font-family: 'Playfair Display', serif;
+        line-height: 35px;
+        color: map-get($map: $tipos-colores, $key: tipo5);
+        font-weight: 800;
+        padding: 6% 0 3% 0;}
+    .imagen_index_p{width: 100%;}    
     .video_index  {
         width: 30%;
         display: block;
@@ -214,7 +223,7 @@ footer {
                 display: inline-block;
                 margin-bottom: auto;
                 padding: 2% 0;
-                width: 97%;
+                width: 95%;
                 text-align: center;
                 border: 1px solid rgb(8, 7, 7);
                 border-radius: 50px;

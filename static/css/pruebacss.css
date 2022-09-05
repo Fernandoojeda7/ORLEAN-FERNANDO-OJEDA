@@ -91,6 +91,17 @@ footer {
       color: #b1adad;
       font-weight: 500;
       font-style: italic; }
+  .main_index .h6_index {
+    text-align: center;
+    font-size: 180%;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Playfair Display', serif;
+    line-height: 35px;
+    color: #000000;
+    font-weight: 800;
+    padding: 6% 0 3% 0; }
+  .main_index .imagen_index_p {
+    width: 100%; }
   .main_index .video_index {
     width: 30%;
     display: block;
@@ -186,7 +197,7 @@ footer {
         display: inline-block;
         margin-bottom: auto;
         padding: 2% 0;
-        width: 97%;
+        width: 95%;
         text-align: center;
         border: 1px solid #080707;
         border-radius: 50px;
