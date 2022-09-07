@@ -70,7 +70,6 @@ footer {
         }
     }
     .h3_footer {
-        font-size: 100%;
         color: map-get($map: $tipos-colores, $key: tipo4);
         text-decoration: none;
         font-family: 'Abril Fatface', cursive;
@@ -85,7 +84,6 @@ footer {
     padding: 0.2% 0 0 0;
     .h1_index {
         text-align: center;
-        font-size: 250%;
         font-family: 'Abril Fatface', cursive;
         font-family: 'Playfair Display', serif;
         line-height: 35px;
@@ -112,7 +110,6 @@ footer {
     }
     .h6_index{
         text-align: center;
-        font-size: 180%;
         font-family: 'Abril Fatface', cursive;
         font-family: 'Playfair Display', serif;
         line-height: 35px;
@@ -259,9 +256,11 @@ footer {
     }
 }
 @media all and (max-width: 600px) {
+    .h1_index{font-size: 165%;}
     .modelo {display: none;}
     .section_index {flex-direction: column;}
     .h4_index{margin: 12% 0 2% 0;}
+    .h6_index{font-size: 120%;}
     .servicios { flex-direction: column;}
     .titulo_servicios{font-size: 120%;}
     .parrafo_servicios{max-width: 40%;}
@@ -273,11 +272,15 @@ footer {
     .i_contacto{font-size: 140%;}
     .h3_contacto{font-size: 100%;}
     .form_contacto{align-items: center;}
+    .label_contacto{margin: 0 3%}
+    .h3_footer {font-size: 70%;}
 }
 @media all and (min-width: 601px) {
-    .modelo {display: inline-block;}
+    .h1_index{font-size: 210%;}
+    .modelo {display: inline-block; max-width: 56%; margin: auto;}
     .section_index {display:flex; flex-direction: column}
     .h4_index{ margin: 8% 0 2% 0;}
+    .h6_index{font-size: 165%;}
     .i_footer{font-size: 140%;}
     .imagen_nosotras {width: 40%;}
     .parrafo_nosotras {font-size: 120%;}
@@ -288,15 +291,18 @@ footer {
     .h1_contacto {font-size: 130%; text-align: center;}
     .i_contacto{font-size: 140%;}
     .h3_contacto{font-size: 100%;}
-    .form_contacto{align-items: center;}   
+    .form_contacto{align-items: center;}
+    .h3_footer {font-size: 90%;}   
 }
 @media all and (min-width: 900px) {
-    .modelo {display: inline-block}
+    .h1_index{font-size: 250%;}
+    .modelo {display: inline-block; margin: 0%;}
     .section_index{
         display: flex;
         justify-content: space-around;
         flex-direction: row-reverse;}
     .h4_index{margin: 46% 0 2% 0;}
+    .h6_index{font-size: 180%;}
     hr{margin: 0 0 44% 0;}
     .i_footer{font-size: 150%;}
     .servicios { flex-direction: row;}
@@ -311,5 +317,6 @@ footer {
     .contacto_imagen{width: 35%;}
     .contenido_contacto{display: flex; flex-direction: row; }
     .form_contacto{position: relative; right: 20%;}
+    .h3_footer {font-size: 100%;}
 }
 

@@ -54,7 +54,6 @@ footer {
       font-size: 130%;
       margin: 0 1% 2% 1%; }
   footer .h3_footer {
-    font-size: 100%;
     color: white;
     text-decoration: none;
     font-family: 'Abril Fatface', cursive;
@@ -68,7 +67,6 @@ footer {
   padding: 0.2% 0 0 0; }
   .main_index .h1_index {
     text-align: center;
-    font-size: 250%;
     font-family: 'Abril Fatface', cursive;
     font-family: 'Playfair Display', serif;
     line-height: 35px;
@@ -93,7 +91,6 @@ footer {
       font-style: italic; }
   .main_index .h6_index {
     text-align: center;
-    font-size: 180%;
     font-family: 'Abril Fatface', cursive;
     font-family: 'Playfair Display', serif;
     line-height: 35px;
@@ -228,12 +225,16 @@ footer {
     font-size: 170%; }
 
 @media all and (max-width: 600px) {
+  .h1_index {
+    font-size: 165%; }
   .modelo {
     display: none; }
   .section_index {
     flex-direction: column; }
   .h4_index {
     margin: 12% 0 2% 0; }
+  .h6_index {
+    font-size: 120%; }
   .servicios {
     flex-direction: column; }
   .titulo_servicios {
@@ -257,16 +258,26 @@ footer {
   .h3_contacto {
     font-size: 100%; }
   .form_contacto {
-    align-items: center; } }
+    align-items: center; }
+  .label_contacto {
+    margin: 0 3%; }
+  .h3_footer {
+    font-size: 70%; } }
 
 @media all and (min-width: 601px) {
+  .h1_index {
+    font-size: 210%; }
   .modelo {
-    display: inline-block; }
+    display: inline-block;
+    max-width: 56%;
+    margin: auto; }
   .section_index {
     display: flex;
     flex-direction: column; }
   .h4_index {
     margin: 8% 0 2% 0; }
+  .h6_index {
+    font-size: 165%; }
   .i_footer {
     font-size: 140%; }
   .imagen_nosotras {
@@ -289,17 +300,24 @@ footer {
   .h3_contacto {
     font-size: 100%; }
   .form_contacto {
-    align-items: center; } }
+    align-items: center; }
+  .h3_footer {
+    font-size: 90%; } }
 
 @media all and (min-width: 900px) {
+  .h1_index {
+    font-size: 250%; }
   .modelo {
-    display: inline-block; }
+    display: inline-block;
+    margin: 0%; }
   .section_index {
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse; }
   .h4_index {
     margin: 46% 0 2% 0; }
+  .h6_index {
+    font-size: 180%; }
   hr {
     margin: 0 0 44% 0; }
   .i_footer {
@@ -332,4 +350,6 @@ footer {
     flex-direction: row; }
   .form_contacto {
     position: relative;
-    right: 20%; } }
+    right: 20%; }
+  .h3_footer {
+    font-size: 100%; } }
