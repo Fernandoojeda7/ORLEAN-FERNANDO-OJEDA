@@ -171,10 +171,8 @@ footer {
       width: 40%;
       margin: 0 2% 1% 0; }
     .main_servicios .servicios .parrafo_servicios {
-      font-size: 120%;
       font-family: 'Abril Fatface', cursive;
       font-family: 'Playfair Display', serif;
-      line-height: 25px;
       color: #000000;
       font-weight: 500;
       font-style: italic;
@@ -189,10 +187,12 @@ footer {
     flex-wrap: wrap;
     justify-content: space-evenly; }
     .main_producto .contenedor_productos .producto {
-      margin: 2%; }
+      margin: 2%;
+      width: 18rem; }
       .main_producto .contenedor_productos .producto:hover {
         box-shadow: 10px 10px 10px 10px #807d7d;
-        transform: scale(1.1); }
+        transform: scale(1.1);
+        transition: all 0.9s ease-in-out; }
       .main_producto .contenedor_productos .producto .boton_producto {
         display: inline-block;
         margin-bottom: auto;
@@ -204,10 +204,6 @@ footer {
         margin: 3%;
         background: radial-gradient(circle, #dc49f0 0%, #1d1e1f 100%);
         color: #000000; }
-      .main_producto .contenedor_productos .producto .parrafo_producto {
-        display: none; }
-      .main_producto .contenedor_productos .producto .parrafo_producto:hover {
-        display: inline-block; }
 
 .main_nosotras {
   background-color: #f1b1f6; }
@@ -240,6 +236,8 @@ footer {
     margin: 12% 0 2% 0; }
   .servicios {
     flex-direction: column; }
+  .titulo_servicios {
+    font-size: 120%; }
   .parrafo_servicios {
     max-width: 40%; }
   .imagen_nosotras {
@@ -275,9 +273,10 @@ footer {
     width: 40%; }
   .parrafo_nosotras {
     font-size: 120%; }
+  .titulo_servicios {
+    font-size: 135%; }
   .parrafo_servicios {
-    font-size: 80%;
-    line-height: 18px; }
+    font-size: 80%; }
   .producto {
     max-width: 40%; }
   .contenido_contacto {
@@ -311,6 +310,8 @@ footer {
     width: 30%; }
   .parrafo_nosotras {
     font-size: 150%; }
+  .titulo_servicios {
+    font-size: 200%; }
   .parrafo_servicios {
     font-size: 130%;
     line-height: 30px; }
