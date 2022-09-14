@@ -33,10 +33,14 @@ html {
     .header_servicios .nav .a_contiene_logo, .header_index .nav .a_contiene_logo {
       display: contents; }
     .header_servicios .nav .logo_header, .header_index .nav .logo_header {
-      padding: 0 2% 0 1%;
-      width: 9%;
-      height: 40%;
-      border-radius: 90%; }
+      -webkit-transition: all 1s ease-out;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease; }
+    .header_servicios .nav .logo_header:hover, .header_index .nav .logo_header:hover {
+      -webkit-transform: rotateY(180deg);
+      -webkit-transform-style: preserve-3d;
+      transform: rotateY(360deg);
+      transform-style: preserve-3d; }
 
 footer {
   background-color: #000000; }
@@ -44,7 +48,19 @@ footer {
     margin: 1% 0 0 2%;
     width: 6%;
     height: 40%;
-    border-radius: 70%; }
+    border-radius: 70%;
+    border: 5px solid #a09d9d;
+    -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease; }
+  footer .logo_footer:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(360deg);
+    transform-style: preserve-3d; }
   footer .div_footer {
     display: flex;
     flex-direction: row;
@@ -89,6 +105,13 @@ footer {
       color: #b1adad;
       font-weight: 500;
       font-style: italic; }
+  .main_index .index_servicios {
+    display: flex;
+    justify-content: space-around; }
+    .main_index .index_servicios .index_servicio {
+      text-align: center;
+      color: #da25f2;
+      margin: 1% 0; }
   .main_index .h6_index {
     text-align: center;
     font-family: 'Abril Fatface', cursive;
@@ -100,10 +123,28 @@ footer {
   .main_index .imagen_index_p {
     width: 100%; }
   .main_index .video_index {
-    width: 30%;
     display: block;
     margin: auto;
     background-color: #e9e0e0; }
+  .main_index .contenedor_tarjetas {
+    display: flex;
+    justify-content: space-around;
+    margin: 2%; }
+    .main_index .contenedor_tarjetas .tarjetas {
+      border-radius: 7%;
+      margin: 2%;
+      background: radial-gradient(circle, #dc49f0 0%, #1d1e1f 100%);
+      text-align: center; }
+      .main_index .contenedor_tarjetas .tarjetas .icono_tarjeta {
+        color: white;
+        font-size: 240%;
+        padding: 15%; }
+      .main_index .contenedor_tarjetas .tarjetas .h5_index {
+        color: white;
+        margin-bottom: 10%; }
+      .main_index .contenedor_tarjetas .tarjetas .parrafo_index {
+        color: white;
+        margin-bottom: 10%; }
 
 .main_contacto {
   background-color: #f1b1f6; }
@@ -225,16 +266,34 @@ footer {
     font-size: 170%; }
 
 @media all and (max-width: 600px) {
+  .header_index .nav .logo_header {
+    width: 9%;
+    height: 40%;
+    border-radius: 70%; }
   .h1_index {
     font-size: 165%; }
   .modelo {
     display: none; }
   .section_index {
     flex-direction: column; }
+  .index_servicios {
+    align-items: center;
+    flex-direction: column; }
+    .index_servicios img {
+      width: 100%; }
   .h4_index {
     margin: 12% 0 2% 0; }
   .h6_index {
     font-size: 120%; }
+  .video_index {
+    width: 40%; }
+  .contenedor_tarjetas {
+    align-items: center;
+    flex-direction: column; }
+    .contenedor_tarjetas .tarjetas {
+      width: 50%; }
+  .parrafo_index {
+    font-size: 100%; }
   .servicios {
     flex-direction: column; }
   .titulo_servicios {
@@ -265,6 +324,10 @@ footer {
     font-size: 70%; } }
 
 @media all and (min-width: 601px) {
+  .header_index .nav .logo_header {
+    width: 9%;
+    height: 40%;
+    border-radius: 70%; }
   .h1_index {
     font-size: 210%; }
   .modelo {
@@ -278,7 +341,19 @@ footer {
     margin: 8% 0 2% 0; }
   .h6_index {
     font-size: 165%; }
-  .i_footer {
+  .index_servicios {
+    align-items: center;
+    flex-direction: column; }
+    .index_servicios img {
+      width: 100%; }
+  .contenedor_tarjetas {
+    align-items: center;
+    flex-direction: column; }
+    .contenedor_tarjetas .tarjetas {
+      width: 35%; }
+  .parrafo_index {
+    font-size: 90%; }
+  footer .div_footer .i_footer {
     font-size: 140%; }
   .imagen_nosotras {
     width: 40%; }
@@ -305,6 +380,10 @@ footer {
     font-size: 90%; } }
 
 @media all and (min-width: 900px) {
+  .header_index .nav .logo_header {
+    width: 6%;
+    height: 40%;
+    border-radius: 70%; }
   .h1_index {
     font-size: 250%; }
   .modelo {
@@ -318,9 +397,25 @@ footer {
     margin: 46% 0 2% 0; }
   .h6_index {
     font-size: 180%; }
+  .index_servicios {
+    flex-direction: row;
+    justify-content: space-around; }
+    .index_servicios img {
+      width: 100%; }
+    .index_servicios .index_servicio {
+      font-size: 130%; }
+  .video_index {
+    width: 17%; }
+  .contenedor_tarjetas {
+    flex-direction: row;
+    justify-content: space-around; }
+    .contenedor_tarjetas .tarjetas {
+      max-width: 40%; }
+      .contenedor_tarjetas .tarjetas .parrafo_index {
+        font-size: 95%; }
   hr {
     margin: 0 0 44% 0; }
-  .i_footer {
+  footer .div_footer .i_footer {
     font-size: 150%; }
   .servicios {
     flex-direction: row; }
