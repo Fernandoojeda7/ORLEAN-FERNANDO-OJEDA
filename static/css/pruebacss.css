@@ -33,6 +33,9 @@ html {
     .header_servicios .nav .a_contiene_logo, .header_index .nav .a_contiene_logo {
       display: contents; }
     .header_servicios .nav .logo_header, .header_index .nav .logo_header {
+      width: 6%;
+      height: 40%;
+      border-radius: 70%;
       -webkit-transition: all 1s ease-out;
       -moz-transition: all 1s ease;
       -o-transition: all 1s ease; }
@@ -266,10 +269,10 @@ footer {
     font-size: 170%; }
 
 @media all and (max-width: 600px) {
-  .header_index .nav .logo_header {
+  .header_servicios .nav .logo_header, .header_index .nav .logo_header {
     width: 9%;
     height: 40%;
-    border-radius: 70%; }
+    border-radius: 70% !important; }
   .h1_index {
     font-size: 165%; }
   .modelo {
@@ -324,8 +327,8 @@ footer {
     font-size: 70%; } }
 
 @media all and (min-width: 601px) {
-  .header_index .nav .logo_header {
-    width: 9%;
+  .header_servicios .nav .logo_header, .header_index .nav .logo_header {
+    width: 7%;
     height: 40%;
     border-radius: 70%; }
   .h1_index {
@@ -380,7 +383,7 @@ footer {
     font-size: 90%; } }
 
 @media all and (min-width: 900px) {
-  .header_index .nav .logo_header {
+  .header_servicios .nav .logo_header, .header_index .nav .logo_header {
     width: 6%;
     height: 40%;
     border-radius: 70%; }

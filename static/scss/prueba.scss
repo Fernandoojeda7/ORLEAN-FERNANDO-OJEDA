@@ -46,6 +46,8 @@ html{
             display: contents;
         }
         .logo_header {
+            @include medidas(6%, 40%);
+            border-radius:70%;
             -webkit-transition: all 1s ease-out;
             -moz-transition: all 1s ease;
             -o-transition: all 1s ease;
@@ -296,7 +298,7 @@ footer {
     }
 }
 @media all and (max-width: 600px) {
-    .header_index .nav .logo_header{ @include medidas(9%, 40%); border-radius:70%;}
+    .header_servicios .nav .logo_header{ @include medidas(9%, 40%); border-radius:70%!important;}
     .h1_index{font-size: 165%;}
     .modelo {display: none;}
     .section_index {flex-direction: column;}
@@ -321,7 +323,7 @@ footer {
     .h3_footer {font-size: 70%;}
 }
 @media all and (min-width: 601px) {
-    .header_index .nav .logo_header{ @include medidas(9%, 40%); border-radius:70%;}
+    .header_servicios .nav .logo_header{ @include medidas(7%, 40%); border-radius:70%;}
     .h1_index{font-size: 210%;}
     .modelo {display: inline-block; max-width: 56%; margin: auto;}
     .section_index {display:flex; flex-direction: column}
@@ -344,7 +346,7 @@ footer {
     .h3_footer {font-size: 90%;}   
 }
 @media all and (min-width: 900px) {
-    .header_index .nav .logo_header{ @include medidas(6%, 40%); border-radius:70%;}
+    .header_servicios .nav .logo_header{@include medidas(6%, 40%); border-radius:70%;}
     .h1_index{font-size: 250%;}
     .modelo {display: inline-block; margin: 0%;}
     .section_index{
